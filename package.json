@@ -1,8 +1,8 @@
 {
   "name": "mySailsBlog",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.0.1",
+  "description": "A blog application written in Sails.js",
   "keywords": [],
   "dependencies": {
     "sails": "~0.10.5",
@@ -33,5 +33,5 @@
     "url": "git://github.com/marchev/mySailsBlog.git"
   },
   "author": "marchev",
-  "license": ""
+  "license": "CC-BY-NC-4.0"
 }
