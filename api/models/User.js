@@ -7,6 +7,8 @@
 
 module.exports = {
 
+  schema : true,
+
   attributes: {
     
     'email' : {
@@ -24,7 +26,15 @@ module.exports = {
     'password' : {
       type: 'string',
       required: true
-    }
+    } //,
+
+    // toJSON: function() {
+    //   var obj = this.toObject();
+    //   delete obj.password;
+    //   delete obj.confirm_password;
+    //   delete obj._csrf;
+    //   return obj;
+    // }
 
   }
 };

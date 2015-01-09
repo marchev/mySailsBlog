@@ -34,7 +34,14 @@ module.exports.routes = {
 
   '/': {
     view: 'static/index'
-  }
+  },
+
+  // User actions
+
+  '/signup' : 'UserController.signup',
+
+  'get /process-signup' : '/signup',
+  'post /process-signup' : 'UserController.processSignup'
 
   /***************************************************************************
   *                                                                          *

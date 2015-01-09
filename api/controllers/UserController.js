@@ -7,8 +7,21 @@
 
 module.exports = {
     
-    'new': function (req, res) {
+    'signup': function (req, res) {
         res.view();
+    },
+
+    'processSignup': function (req, res) {
+
+    	User.create(req.params.all(), function userCreated(err, user) {
+    		if (err) { 
+    			return next(err);
+    		}
+    		else {
+    			res.json(user);
+    		}
+
+    	});
     }
 	
 };
