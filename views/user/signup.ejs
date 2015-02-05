@@ -1,5 +1,12 @@
 <div class="container">
 	<div class="jumbotron">
+		<% if (flash && flash.err) { %>
+		<ul class="alert alert-success">
+			<% Object.keys(flash.err.invalidAttributes).forEach(function (attr) { %>
+			<li><%- attr %> : <%- JSON.stringify(flash.err.invalidAttributes[attr]) %></li>
+			<% }) %>
+		</ul>
+		<% } %>
 		<form action="/process-signup" method="post" class="form-signin">
 			<h1 class="form-signin-heading">sign up</h1>
 

@@ -38,6 +38,8 @@ module.exports.routes = {
 
   // User actions
 
+  'get /test' : 'UserController.test',
+
   '/signup' : 'UserController.signup',
 
   'get /process-signup' : '/signup',
